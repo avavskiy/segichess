@@ -4,6 +4,9 @@
 #define ANSI_COLOR_RED     "\x1b[31m"
 #define ANSI_COLOR_RESET   "\x1b[0m"
 
+/* Глобальных переменных быть не должно. Поэтому доска
+ * и должна была бы быть отдельным классом, потому что
+ * у неё все-таки есть состояние */
 std::string buff;
 bool flag_buff;
 std::string doska[10][10];
